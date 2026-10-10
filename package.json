@@ -17,6 +17,6 @@
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.3.7",
     "rehype-external-links": "^3.0.0",
-    "typescript": "^5.4.3"
+    "typescript": "^6.0.3"
   }
 }
