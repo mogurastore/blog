@@ -1,0 +1,32 @@
+---
+pubDate: 2026-05-10
+tags: [hermes-agent]
+title: hermes agentを触ってる
+---
+
+最近hermes agentを触ってます。
+
+最初はローカルで動かしてましたがcronやtelegram連携考えたらvpsの方が良いかと思ってawsのligthsailを契約しました。
+
+プロバイダーはopencode go経由でdeepseek v4 flashを使ってます。
+openaiを使いたかったのですがなかなか消費が激しかったので止めました。
+Nous Portalという公式っぽいプロバイダもあるので気になってます。
+
+notionやairtableと連携してデータを扱えるようにしました。
+本当はnotionよりwhimsicalを使ってるのでそちらを連携したかったけど標準でskillになくてmcp連携が上手くできず頓挫してます。
+
+vpsだとdashboardは認証をかけた方が良いかなと思ったけどsshでport forwardingしたらlocalhostでアクセスできると知りました。
+
+一応ローカルでも使ってます。
+hermes agentはmemoryやskillなどがディレクトリに溜まっていくので2つの環境にあると良さを活かしきれないかと思いましたが同期も面倒なので妥協しました。
+
+ローカルではどう実行するか悩んでいます。
+なんとなくdocker経由で実行してますがローカルのcodexなどと連携させたいならローカルに入れるべきかもと思ってます。
+
+あと地味にimageがデカくて8GBあります。
+自分はいろいろ削った版のimageを作成して700MBくらいにしてます。
+hermes chat --tuiを使いたいけどnode.jsとnode_modulesを含める必要がありtuiなのにサイズが爆発的に増えるので泣く泣く諦めました。
+
+https://github.com/lisp719/hermes-slim-image
+
+まだ使いこなせてないですが良い感じです。

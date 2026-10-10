@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import {SITE_DESCRIPTION} from '../consts'
+---
+
+<Layout
+	title="About Me"
+	description={SITE_DESCRIPTION}
+	pubDate={new Date('2024-03-31')}
+>
+	<p>{SITE_DESCRIPTION}</p>
+</Layout>
